@@ -2,6 +2,86 @@
 
 #include <stdio.h>
 
+////100-200之间的素数；（案1）
+//int main()
+//{
+//	int i = 0;
+//	int n = 0;
+//	int count = 0;
+//	for (i = 100; i <= 200; i++)
+//	{
+//		//试除法
+//		for(n = 2; n <= i - 1;n++)
+//		{
+//			if (i % n == 0)
+//			{
+//				break;
+//			}
+//		}
+//		if (n == i)
+//		{
+//			printf("%d ", i);
+//			count++;
+//		}
+//	}
+//	printf("\n count=%d", count);
+//	return 0;
+//}
+
+#include <math.h>
+////100-200之间的素数；（案2）
+//int main()
+//{
+//	int i = 0;
+//	int n = 0;
+//	int count = 0;
+//	for (i = 101; i <= 200; i+=2)
+//	{
+//		//试除法
+//		for(n = 2; n <=sqrt(i); n++)
+//		{
+//			if (i % n == 0)
+//			{
+//				break;
+//			}
+//		}
+//		if (n > sqrt(i))
+//		{
+//			printf("%d ", i);
+//			count++;
+//		}
+//	}
+//	printf("\n count=%d", count);
+//	return 0;
+//}
+
+////打印1000-2000年之间的闰年
+//int main()
+//{
+//	int year = 0;
+//	int count = 0;
+//	for (year = 1000; year <= 2000; year++)
+//	{
+//		//if (year % 4 == 0 && year % 100 != 0)
+//		//{
+//		//	printf("%d ", year);
+//		//	count++;
+//		//}
+//		//else if (year % 400 == 0)
+//		//{
+//		//	printf("%d ", year);
+//		//	count++;
+//		//}//案1
+//		if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+//		{
+//			printf("%d ", year);
+//			count++;
+//		}//案2
+//	}
+//	printf("\n count=%d\n", count);
+//	return 0;
+//}
+
 //int main()
 //{
 //	int i = 0;
